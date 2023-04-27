@@ -1,0 +1,6 @@
+USERID=
+PASSWORD=
+USERID_FORM=userid
+PASSWORD_FORM=password
+TRYURL=http://captive.apple.com
+INTERVAL=0.1
