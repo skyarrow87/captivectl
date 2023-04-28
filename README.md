@@ -12,6 +12,9 @@ pipenvで環境を構築
 pipenv install
 ```
 
+
+Linuxの場合 ```patchelf```と```ccache```が必要
+
 nuitkaでビルド
 ```
 nuitka3 --standalone --onefile captivectl.py 
