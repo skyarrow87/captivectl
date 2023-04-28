@@ -39,6 +39,7 @@ if os.path.isfile(path):
         except ValueError:
             interval = float(0.1)
             print('The try interval is not set correctly. Only numbers (seconds) can be used. Use the default "0.1".\nトライ間隔が正しく設定されていません。数字（秒）のみが使用できます。デフォルトの"0.1"を使用します。\nINTERVAL=<seconds>')
+    print('The configuration file has been read correctly.\n設定ファイルが正しく読み込まれました。')
 else:
     print('Please specify the correct configuration file.\n正しい設定ファイルを指定してください。')
     sys.exit(1)
@@ -64,7 +65,7 @@ while True:
         except requests.exceptions.RequestException as e:
             pass
         else:
-            print(datetime.datetime.now().strftime('%Y/%m/%d %H:%M') + 'Logined ログイン')
+            print(datetime.datetime.now().strftime('%Y/%m/%d %H:%M') + ' Sucsess')
     else:
         time.sleep(interval)
         redirect_url = ''
